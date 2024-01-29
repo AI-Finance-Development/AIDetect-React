@@ -1,0 +1,9 @@
+.caffe-place-container{
+    padding: 24px;
+    height: 100%;
+    background-color: white;
+}
+
+.footer-modal{
+    gap: 1rem;
+}

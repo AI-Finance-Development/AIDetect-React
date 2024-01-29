@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    list-style: none;
+}
+
+.hero {
+    height: 100%;
+    width: 100%;
+    /* background: linear-gradient(245.59deg,
+    #525252 0%,
+    #363636 28.53%,
+    #222222 75.52%); */
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+section {
+    padding: 0 19%;
+}
+
+.hero-text h5 {
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.hero-text h1 {
+    font-family: "Permanent Marker", cursive;
+    font-size: 90px;
+    line-height: 1;
+    color: white;
+    margin: 0 0 45px;
+}
+
+.hero-text h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 15px;
+    color: white;
+    line-height: 1.9;
+    margin-bottom: 40px;
+}
+
+.home-img {
+    margin-left: 300px;
+    width: 500px;
+    height: auto;
+}
+
+.homeBtn {
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: cyan;
+    cursor: pointer;
+}
+
+.homeBtn:hover {
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan;
+}
+
+
+
+.container-home{
+    height: 100vh;
+}

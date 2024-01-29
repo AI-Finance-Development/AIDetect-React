@@ -1,0 +1,28 @@
+
+.side-menu-container{
+    border-radius: 1rem;
+    display: flex;
+    margin-top: 101px;
+    padding: 24px;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
+}
+
+.side-menu-container svg{
+    height: 50px;
+    width: 50px;
+}
+
+.side-option{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.side-option:hover{
+    cursor: pointer;
+    border-radius: 1rem;
+    background-color:gainsboro;
+}

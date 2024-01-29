@@ -1,0 +1,36 @@
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 24px;
+}
+
+.navLogo {
+    cursor: pointer;
+    color: white;
+    font-size: 28px;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+nav span {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+nav span:hover {
+    cursor: pointer;
+    color: rgb(226, 77, 77);
+    transition: 0.3s;
+}
+
+
+nav ul {
+    padding-right: 50vh;
+}
