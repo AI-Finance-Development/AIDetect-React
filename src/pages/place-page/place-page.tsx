@@ -32,7 +32,7 @@ const PlacePage = (props: PlacePageProps) => {
         }, 1000);
 
         return () => clearInterval(intervalId);
-    }, []); // 
+    }, []); //
 
 
 
@@ -57,12 +57,12 @@ const PlacePage = (props: PlacePageProps) => {
                                         fontSize: '14px',
                                         fontWeight: '500',
                                     }}
-                                >Kapasite : 224</span>
+                                >Capacity : 224</span>
                                 {counter != null ? <span style={{
                                     color: '#344054',
                                     fontSize: '14px',
                                     fontWeight: '500',
-                                }}>Kişi Sayısı : {20+counter}</span> : ""}
+                                }}>number of people : {20+counter}</span> : ""}
                             </div>
                         </Card>
 

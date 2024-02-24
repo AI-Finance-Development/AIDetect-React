@@ -83,10 +83,10 @@ const BankDetailPage = () => {
             localStorage.setItem('comeBank', 'true');
             setThinkingGoCounter((prevState) => prevState + 1)
             setOpenFormModal(false)
-        }}>Evet</AiDButton>,
+        }}>Yes</AiDButton>,
         <AiDButton onClick={() => {
             setOpenFormModal(false)
-        }}>Hayır</AiDButton>
+        }}>No</AiDButton>
 
     ]
 
@@ -95,10 +95,10 @@ const BankDetailPage = () => {
             localStorage.removeItem('comeBank')
             setThinkingGoCounter((prevState) => prevState - 1)
             setOpenFormNegativeModal(false)
-        }}>Evet</AiDButton>,
+        }}>Yes</AiDButton>,
         <AiDButton onClick={() => {
             setOpenFormNegativeModal(false)
-        }}>Hayır</AiDButton>
+        }}>No</AiDButton>
     ]
 
     return (
@@ -109,13 +109,13 @@ const BankDetailPage = () => {
                         <img src={bank?.logo} alt='photo_logo' width={300} />
                         <Space direction='vertical'>
                             <TitleText text={bank?.branch || ''} />
-                            <SubtitleText text={`Adres: ${bank?.address}`} />
-                            <SubtitleText text={`Kapasite: ${bank?.capacity}`} />
-                            <SubtitleText text={`Şu An Mevcut Kişi Sayısı: ${counter}`} />
+                            <SubtitleText text={`Address: ${bank?.address}`} />
+                            <SubtitleText text={`Capacity: ${bank?.capacity}`} />
+                            <SubtitleText text={`Current Number of People: ${counter}`} />
                             {
                                 localStorage.getItem('comeBank') === 'true'
-                                    ? <SubtitleText text={`Siz ve ${thinkingGoCounter - 1} kişi buraya gelmeyi düşünüyor`} />
-                                    : <SubtitleText text={` ${thinkingGoCounter} kişi buraya gelmeyi düşünüyor`} />
+                                    ? <SubtitleText text={`Siz ve ${thinkingGoCounter - 1} other people are thinking of coming here`} />
+                                    : <SubtitleText text={` ${thinkingGoCounter} people are thinking of coming here`} />
 
                             }
 
@@ -125,12 +125,12 @@ const BankDetailPage = () => {
                                         ? <div style={{ cursor: "pointer" }} onClick={() => {
                                             setOpenFormNegativeModal(true)
                                         }}>
-                                            <p style={{ color: "red" }}>Gelme durumunuz değişti mi ? </p>
+                                            <p style={{ color: "red" }}>Has your arrival situation changed? </p>
                                         </div>
                                         : <div style={{ cursor: "pointer" }} onClick={() => {
                                             setOpenFormModal(true)
                                         }}>
-                                            <p >Buraya gitmeyi düşünüyor musun ? </p>
+                                            <p >Are you thinking of going here? </p>
                                         </div>
                                 }
                             </Space>
@@ -147,7 +147,7 @@ const BankDetailPage = () => {
             </Row>
             <Divider />
             <Row justify={'start'} style={{ paddingLeft: "198px" }}>
-                <Col><TitleText text='Mekana Ait Görseller' /></Col>
+                <Col><TitleText text='Images of the bank' /></Col>
             </Row>
             <Row justify={'start'} style={{ paddingLeft: "198px", paddingTop: "24px" }}>
                 <Col>

@@ -38,7 +38,7 @@ const CaffesPage = (props: CaffesPageProps) => {
         <Col span={24} style={{ display: "flex", justifyContent: "center" }}>
           <Input
             style={{ width: "40%", height: "50px", fontSize: "20px" }}
-            placeholder="Yer arayın"
+            placeholder="Search"
             onChange={(e) => handleOnChange(e)}
           />
         </Col>

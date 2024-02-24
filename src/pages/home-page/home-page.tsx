@@ -9,7 +9,7 @@ const HomePage = () => {
             <section className="hero">
                 <div className="hero-text">
                     <h4>AIDetect</h4>
-                    <h1>HOSGELDINIZ</h1>
+                    <h1>WELCOME</h1>
                     <p>
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita
                         sit voluptatibus, minus voluptatum ducimus delectus magnam veritatis

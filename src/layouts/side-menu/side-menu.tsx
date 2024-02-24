@@ -13,15 +13,15 @@ const SideMenu = () => {
     <div className='side-menu-container' >
       <div className='side-option' onClick={() => (navigate("/banks"))}>
         <SVGBank />
-        <span>Bankalar</span>
+        <span>Banks</span>
       </div>
       <div className='side-option' onClick={() => (navigate("/libraries"))}>
         <SVGBook />
-        <span>Kütüphaneler</span>
+        <span>Libraries</span>
       </div>
       <div className='side-option' onClick={() => (navigate("/caffes"))}>
         <SVGCafe />
-        <span>Kafeler</span>
+        <span>Caffes</span>
       </div>
     </div>
   )

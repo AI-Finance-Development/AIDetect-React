@@ -11,7 +11,7 @@ const FormNegativeModal = (props: FormNegativeModalProps) => {
     <AidModal {...props}>
     <div className='form-container'>
         <Space direction='vertical' >
-            <TitleText text='Vaz mı geçtiniz ? ' />
+            <TitleText text='Have you given up? ' />
         </Space>
         {props.buttons && (
             <div

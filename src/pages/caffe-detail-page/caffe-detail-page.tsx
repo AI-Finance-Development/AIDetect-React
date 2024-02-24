@@ -82,17 +82,17 @@ const CaffeDetailPage = () => {
         }, 1000);
 
         return () => clearInterval(intervalId);
-    }, [counter]); // 
+    }, [counter]); //
 
     const buttons = [
         <AiDButton onClick={() => {
             localStorage.setItem('come', 'true');
             setThinkingGoCounter((prevState) => prevState + 1)
             setOpenFormModal(false)
-        }}>Evet</AiDButton>,
+        }}>Yes</AiDButton>,
         <AiDButton onClick={() => {
             setOpenFormModal(false)
-        }}>Hayır</AiDButton>
+        }}>No</AiDButton>
 
     ]
 
@@ -101,10 +101,10 @@ const CaffeDetailPage = () => {
             localStorage.removeItem('come')
             setThinkingGoCounter((prevState) => prevState - 1)
             setOpenFormNegativeModal(false)
-        }}>Evet</AiDButton>,
+        }}>Yes</AiDButton>,
         <AiDButton onClick={() => {
             setOpenFormNegativeModal(false)
-        }}>Hayır</AiDButton>
+        }}>No</AiDButton>
     ]
 
     return (
@@ -115,13 +115,13 @@ const CaffeDetailPage = () => {
                         <img src={caffe?.logo} alt='photo_logo' width={300} />
                         <Space direction='vertical'>
                             <TitleText text={caffe?.branch || ''} />
-                            <SubtitleText text={`Adres: ${caffe?.address}`} />
-                            <SubtitleText text={`Kapasite: ${caffe?.capacity}`} />
-                            <SubtitleText text={`Şu An Mevcut Kişi Sayısı: ${counter}`} />
+                            <SubtitleText text={`Address: ${caffe?.address}`} />
+                            <SubtitleText text={`Capacity: ${caffe?.capacity}`} />
+                            <SubtitleText text={`Current Number of People: ${counter}`} />
                             {
                                 localStorage.getItem('come') === 'true'
-                                    ? <SubtitleText text={`Siz ve ${thinkingGoCounter-1} kişi buraya gelmeyi düşünüyor`} />
-                                    : <SubtitleText text={` ${thinkingGoCounter} kişi buraya gelmeyi düşünüyor`} />
+                                    ? <SubtitleText text={`Siz ve ${thinkingGoCounter-1} other people are thinking of coming here`} />
+                                    : <SubtitleText text={` ${thinkingGoCounter} people are thinking of coming here`} />
 
                             }
 
@@ -131,12 +131,12 @@ const CaffeDetailPage = () => {
                                     ? <div style={{ cursor: "pointer" }} onClick={() => {
                                         setOpenFormNegativeModal(true)
                                     }}>
-                                        <p style={{color:"red"}}>Gelme durumunuz değişti mi ? </p>
+                                        <p style={{color:"red"}}>Has your arrival situation changed? </p>
                                     </div>
                                     : <div style={{ cursor: "pointer" }} onClick={() => {
                                         setOpenFormModal(true)
                                     }}>
-                                        <p >Buraya gitmeyi düşünüyor musun ? </p>
+                                        <p >Are you thinking of going here? </p>
                                     </div>
                                 }
                             </Space>
@@ -155,7 +155,7 @@ const CaffeDetailPage = () => {
             </Row>
             <Divider />
             <Row justify={'start'} style={{ paddingLeft: "198px" }}>
-                <Col><TitleText text='Mekana Ait Görseller' /></Col>
+                <Col><TitleText text='Images of the caffe' /></Col>
             </Row>
             <Row justify={'start'} style={{ paddingLeft: "198px", paddingTop: "24px" }}>
                 <Col>

@@ -29,7 +29,7 @@ const AiDCard = (props: AiDCardProps) => {
                 </div>
             </Space>
             <div className='footer'>
-                <AiDButton>Yoğunluğu Gör</AiDButton>
+                <AiDButton>see the crowd</AiDButton>
             </div>
             <div>
                 {

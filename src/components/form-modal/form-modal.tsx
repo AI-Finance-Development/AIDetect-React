@@ -16,8 +16,8 @@ const FormModal = (props: FormModalProps) => {
         <AidModal {...props}>
             <div className='form-container'>
                 <Space direction='vertical' >
-                    <TitleText text='Buraya gelecek misiniz ? ' />
-                    <SubtitleText text='Bu mekana mesafeniz 16 dakika olarak ölçülmüştür' />
+                    <TitleText text='Will you come here ? ' />
+                    <SubtitleText text='Your distance to this place is measured as 16 minutes' />
                 </Space>
                 {props.buttons && (
                     <div

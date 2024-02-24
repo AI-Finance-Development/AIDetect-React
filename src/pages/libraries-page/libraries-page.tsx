@@ -37,7 +37,7 @@ const LibrariesPage = (props: LibrariesPageProps) => {
         <div >
             <Row>
                 <Col span={24} style={{ display: "flex", justifyContent: "center" }}>
-                    <Input style={{ width: "40%", height: "50px", fontSize: "20px" }} placeholder='Yer arayın' onChange={(e) => handleOnChange(e)} />
+                    <Input style={{ width: "40%", height: "50px", fontSize: "20px" }} placeholder='Search' onChange={(e) => handleOnChange(e)} />
                 </Col>
             </Row>
             <Row style={{ justifyContent: "center", paddingTop: "2rem" }}>
